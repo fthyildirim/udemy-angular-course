@@ -1,9 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 // @import "../node_modules//bootstrap/dist/css/bootstrap-reboot.min.scss";
-// @import "../node_modules//bootstrap/dist/css/bootstrap-grid.scss"; 
-// @import "./assets/styles/_toastr.scss";
-@import '~igniteui-angular/lib/core/styles/themes/index';
 
-// @import "./assets/styles/variables.scss";
-// @import "./assets/styles/_igx-theme.scss";
-// @import "./assets/styles/_igx-navbar.scss";
+@import "../node_modules/bootstrap/dist/css/bootstrap-reboot.min.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
+@import '~igniteui-angular/lib/core/styles/themes/index';
+@import "./assets/styles/toastr";
+
+@import "./assets/styles/variables.scss";
+@import "./assets/styles/_igx-theme.scss";
+@import "./assets/styles/_igx-navbar.scss";
+
+
+
+@include igx-typography($font-family: $material-typeface, $type-scale: $material-type-scale);

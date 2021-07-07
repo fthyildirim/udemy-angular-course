@@ -1,0 +1,142 @@
+<!-- 
+<div class="carousel-container">
+  <igx-carousel>
+      <igx-slide>
+          <div class="slide-content-wrapper">
+              <img src="https://www.infragistics.com/angular-demos/assets/images/svg/carousel/SignUp.svg">
+              <form #form class="signInForm">
+                  <igx-input-group>
+                      <igx-prefix>
+                          <igx-icon>person</igx-icon>
+                      </igx-prefix>
+                      <label style="display: flex;" igxLabel for="username">Username</label>
+                      <input igxInput id="username" type="text" />
+                  </igx-input-group>
+                  <igx-input-group>
+                      <igx-prefix>
+                          <igx-icon>lock</igx-icon>
+                      </igx-prefix>
+                      <label style="display: flex;" igxLabel for="password">Password</label>
+                      <input igxInput id="password" type="password" />
+                  </igx-input-group>
+              </form>
+              <div class="btn">
+                  <button igxButton="raised" type="submit" (click)="form.reset()">Sign In</button>
+              </div>
+          </div>
+      </igx-slide>
+
+      <igx-slide>
+          <div class="slide-content-wrapper">
+              <img src="https://www.infragistics.com/angular-demos/assets/images/svg/carousel/Route.svg">
+              <form #form2 class="searchForm">
+                  <igx-input-group>
+                      <igx-prefix>
+                          <igx-icon>search</igx-icon>
+                      </igx-prefix>
+                      <label style="display: flex;" igxLabel for="username">Search</label>
+                      <input igxInput id="search" type="text" />
+                  </igx-input-group>
+              </form>
+              <div class="btn">
+                  <button igxButton="raised" type="submit" (click)="form2.reset()">Search</button>
+              </div>
+          </div>
+      </igx-slide>
+  </igx-carousel>
+</div>
+ -->
+
+
+<!-- <div class="row">
+    <div class="col-md-4">
+      <button igxButton="flat">Fatih</button>
+    </div>
+    <div class="col-md-4">col-md-4</div>
+    <div class="col-md-4">col-md-4</div>
+    </div>
+ -->
+
+
+
+
+<app-navbar></app-navbar>
+
+<!-- 
+<div class="row">
+  
+<div class="col-md-3">
+  <h2 routerLink="home">go to Home</h2>
+</div>
+<div class="col-md-3">
+  <h2 routerLink="role">go to role</h2>
+</div>
+<div class="col-md-3">
+  <h2 routerLink="user">go to user</h2>
+</div>
+<div class="col-md-3">
+  <h2 [routerLink]="['user',5]">go to user 7 detail</h2>
+</div>
+</div> -->
+
+<!-- <div class="row">
+    <div class="col-md-12">
+      <app-sidebar></app-sidebar>
+      <ul>
+        <li routerLink="home">
+          Home
+        </li>
+        <li routerLink="role">
+          Role
+        </li>
+        <li routerLink="user">
+          User
+        </li>
+        <ul>
+          <li [routerLink]="['user',5]">
+            User 5 Detail
+          </li>
+          <li [routerLink]="['user',5, 'role']">
+            User 5 Role
+          </li>
+        </ul>
+      </ul>
+    
+    </div>
+  </div> -->
+    
+ <div class="row">
+<div class="col-md-3">
+<app-sidebar></app-sidebar>
+  <!-- <ul>
+    <li routerLink="home">
+      Role
+    </li>
+    <li routerLink="role">
+      Home
+    </li>
+    <li routerLink="user">
+      User
+    </li>
+    <ul >
+      <li [routerLink]="['user',5]" >user 5 detail</li>
+      <li [routerLink]="['user',5, 'role']">User Role</li>
+    </ul>
+  </ul> -->
+</div>
+
+<div class="col-md-9">
+  <router-outlet></router-outlet>
+</div>
+</div>
+   
+
+
+    
+
+
+  <ngx-spinner
+  bdColor="rgba(0, 0, 0, 1)"
+  template="<img src='https://media.giphy.com/media/o8igknyuKs6aY/giphy.gif' />"
+>
+</ngx-spinner>
